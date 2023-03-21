@@ -1,0 +1,49 @@
+/* toogle dark or light mode section */
+.darkmode {
+    --color-light: #eee;
+    --color-dark: #222831;
+    --color-orange: #db6400;
+  
+    background-color: var(--color-dark);
+    color: var(--color-light);
+  }
+  .toggle-darkmode {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    border: 1px solid var(--foreground);
+    border-radius: 3px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .toggle-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 3px;
+  }
+  
+
+  /* scroll indicator */
+  .scroll-indicator {
+    width: 100%;
+    height: 3px;
+    background: var(--grey);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    visibility: hidden;
+  }
+
+  .progress {
+    width: 0%;
+    height: 3px;
+    background-color: var(--yellow);
+  }
+
+  /* end of scroll indicator section */
+  
